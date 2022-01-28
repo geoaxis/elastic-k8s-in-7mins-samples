@@ -1,0 +1,8 @@
+apiVersion: skaffold/v2beta27
+kind: Config
+metadata:
+  name: eccweb
+deploy:
+  kustomize:
+    paths:
+      - k8s

@@ -1,0 +1,12 @@
+.git
+node_modules
+**/*.swp
+**/*.tsx~
+**/*.swn
+**/*.swo
+Dockerfile
+/node_modules
+/build
+.git
+*.md
+.gitignore
