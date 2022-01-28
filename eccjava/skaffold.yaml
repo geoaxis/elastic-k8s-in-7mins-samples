@@ -1,0 +1,16 @@
+apiVersion: skaffold/v2beta27
+kind: Config
+metadata:
+  name: eccjava
+build:
+  artifacts:
+    - image: eccjava
+      buildpacks:
+        builder: gcr.io/paketo-buildpacks/builder:base
+        env:
+          - BP_JVM_VERSION=17 #needed for Java 17
+          - BPL_JAVA_NMT_ENABLED=false
+deploy:
+  kustomize:
+    paths:
+      - k8s
