@@ -12,7 +12,7 @@ const User = props => {
   );
 
   useEffect(() => {
-    fetch( "http://kubernetes.docker.internal/eccjava/api/user/"+ userId + "?stocks=true")
+    fetch( window.__RUNTIME_CONFIG__.API_URL+ userId + "?stocks=true")
     .then(res => res.json())
     .then(
         (data) => {

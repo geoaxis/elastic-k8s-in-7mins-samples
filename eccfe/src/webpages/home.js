@@ -26,6 +26,8 @@ const Home = () => {
     return <div>Loading...</div>;
   } else {
     return (
+        <div>
+        <h1>Users with Stocks</h1>
         <ul>
           {users.map(user => (
               <li key={`${user.id}`}>
@@ -33,6 +35,7 @@ const Home = () => {
               </li>
           ))}
         </ul>
+        </div>
     );
   }
 }

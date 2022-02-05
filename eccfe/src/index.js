@@ -22,7 +22,7 @@ const apm = initApm({
   serviceName: 'eccfe',
 
   // Set custom APM Server URL (default: http://localhost:8200)
-  serverUrl: 'http://kubernetes.docker.internal/apm',
+  serverUrl: window.__RUNTIME_CONFIG__.APM_URL,
 
   // Set service version (required for sourcemap feature)
   serviceVersion: '1.0'

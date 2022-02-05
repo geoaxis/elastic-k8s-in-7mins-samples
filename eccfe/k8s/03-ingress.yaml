@@ -11,6 +11,6 @@ spec:
               service:
                 name: eccfe-service
                 port:
-                  number: 80
+                  number: 3002
             path: /
             pathType: Prefix

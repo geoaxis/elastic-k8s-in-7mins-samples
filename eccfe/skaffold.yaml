@@ -1,7 +1,12 @@
 apiVersion: skaffold/v2beta27
 kind: Config
 metadata:
-  name: eccweb
+  name: eccfe
+build:
+  artifacts:
+    - image: eccfe
+      buildpacks:
+        builder: gcr.io/paketo-buildpacks/builder:base
 deploy:
   kustomize:
     paths:
