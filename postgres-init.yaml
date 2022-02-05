@@ -1,0 +1,11 @@
+image:
+  tag: "13"
+postgresqlUsername: postgres
+postgresqlPassword: "12345678"
+postgresqlDatabase: postgres
+initdbScripts:
+  init.sql: |
+    CREATE USER eccpg_user WITH PASSWORD '12345678';
+    CREATE DATABASE eccpg  ENCODING 'UTF8' LC_COLLATE = 'en_US.UTF-8' LC_CTYPE = 'en_US.UTF-8'  TEMPLATE = template0;
+    GRANT ALL PRIVILEGES ON DATABASE eccpg TO eccpg_user;
+

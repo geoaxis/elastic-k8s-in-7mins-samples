@@ -1,9 +1,9 @@
 INSERT into STOCK_USER values(1,'Philip','Fry');
-INSERT into STOCK_USER values(2,'Dr.','Zoindberg');
-INSERT into STOCK_USER values(3,'Professor','Farnsworth');
+INSERT into STOCK_USER values(2,'Joahn','Zoindberg');
+INSERT into STOCK_USER values(3,'Hubert','Farnsworth');
 INSERT into STOCK_USER values(4,'Hermes','Conrad');
-INSERT into STOCK_USER values(5,'Bender','Bending');
-INSERT into STOCK_USER values(6,'Leela','Lastname');
+INSERT into STOCK_USER values(5,'Bender','Rodríguez');
+INSERT into STOCK_USER values(6,'Turanga','Leela');
 
 INSERT into STOCK values(1,'AAPL');
 INSERT into STOCK values(2,'GOOGL');

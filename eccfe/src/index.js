@@ -16,7 +16,8 @@ ReactDOM.render(
 reportWebVitals();
 
 
-const apm = initApm({
+if(window.__RUNTIME_CONFIG__.USE_APM === 'true') {
+  initApm({
 
   // Set required service name (allowed characters: a-z, A-Z, 0-9, -, _, and space)
   serviceName: 'eccfe',
@@ -27,3 +28,4 @@ const apm = initApm({
   // Set service version (required for sourcemap feature)
   serviceVersion: '1.0'
 })
+}

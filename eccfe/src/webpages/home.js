@@ -31,7 +31,7 @@ const Home = () => {
         <ul>
           {users.map(user => (
               <li key={`${user.id}`}>
-                <Link to={`user/${user.id}`}>{user.firstName}</Link>
+                <Link to={`user/${user.id}`}>{user.firstName} {user.lastName}</Link>
               </li>
           ))}
         </ul>
