@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.6.3</version>
+    <version>3.1.3</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>com.github.geoaxis</groupId>
@@ -16,11 +16,11 @@
   <description>eccjava</description>
   <properties>
     <java.version>17</java.version>
-    <ecs-logging-java.version>1.3.2</ecs-logging-java.version>
-    <janino.version>3.1.6</janino.version>
-    <apm-agent.version>1.28.4</apm-agent.version>
-    <mapstruct.version>1.4.2.Final</mapstruct.version>
-    <springdoc.openapi.version>1.6.4</springdoc.openapi.version>
+    <ecs-logging-java.version>1.5.0</ecs-logging-java.version>
+    <janino.version>3.1.10</janino.version>
+    <apm-agent.version>1.42.0</apm-agent.version>
+    <mapstruct.version>1.5.5.Final</mapstruct.version>
+    <springdoc.openapi.version>2.2.0</springdoc.openapi.version>
   </properties>
   <dependencies>
 
@@ -68,11 +68,12 @@
       <optional>true</optional>
     </dependency>
 
-    <dependency>
+
+     <dependency>
       <groupId>org.springdoc</groupId>
-      <artifactId>springdoc-openapi-ui</artifactId>
+      <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
       <version>${springdoc.openapi.version}</version>
-    </dependency>
+   </dependency>
 
     <dependency>
       <groupId>co.elastic.logging</groupId>
