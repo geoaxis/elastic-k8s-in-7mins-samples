@@ -17,8 +17,22 @@ A sample application suite for elastic community conference talk `Elastic and ku
   ```
 - Install bitnami chart repo for postgres and redis `helm repo add bitnami https://charts.bitnami.com/bitnami`
 - It is best to delete a previously create postgres persistent volume claim  `kubectl delete pvc data-eccpg-postgresql-0`
-- Install a fresh postgres on k8s `helm install eccpg bitnami/postgresql -f postgres-init.yaml"`
-- Install a redis cluster `helm install eccredis bitnami/redis`
+- Install a fresh postgres on k8s 
+	```
+	helm install eccpg bitnami/postgresql \
+  		--set auth.username=eccpg_user \
+  		--set auth.password=eccpg_password \
+  		--set auth.database=eccpg
+	```
+- Install a redis cluster `helm install eccredis oci://registry-1.docker.io/bitnamicharts/redis`
+
+
+helm install eccpg bitnami/postgresql \
+  --set auth.username=eccpg_user \
+  --set auth.password=eccpg_password \
+  --set auth.database=eccpg
+
+
 
 ## Running the applications
 - Go to the folders of eccfe, eccnodejs and eccjava in seperate terminals and run `skaffold dev`

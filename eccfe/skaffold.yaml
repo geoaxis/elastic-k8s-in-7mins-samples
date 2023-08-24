@@ -1,4 +1,4 @@
-apiVersion: skaffold/v2beta27
+apiVersion: skaffold/v4beta6
 kind: Config
 metadata:
   name: eccfe
@@ -7,7 +7,9 @@ build:
     - image: eccfe
       buildpacks:
         builder: gcr.io/paketo-buildpacks/builder:base
-deploy:
+manifests:
   kustomize:
     paths:
       - k8s
+deploy:
+  kubectl: {}
