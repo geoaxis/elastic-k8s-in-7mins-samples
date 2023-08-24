@@ -10,9 +10,10 @@ import {
 import User from "./user";
 import Home from "./home";
 
+
 const Webpages = () => {
   return(
-      <Router>
+      <Router basename="/eccfe">
         <Routes>
           <Route exact path="/" element= {<Home />} />
           <Route path = "/user/:userId" element = {<User/>} />
