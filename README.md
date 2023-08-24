@@ -27,12 +27,7 @@ A sample application suite for elastic community conference talk `Elastic and ku
 - Install a redis cluster `helm install eccredis oci://registry-1.docker.io/bitnamicharts/redis`
 
 
-helm install eccpg bitnami/postgresql \
-  --set auth.username=eccpg_user \
-  --set auth.password=eccpg_password \
-  --set auth.database=eccpg
-
-
 
 ## Running the applications
 - Go to the folders of eccfe, eccnodejs and eccjava in seperate terminals and run `skaffold dev`
+- Browse to [eccfe](http://kubernetes.docker.internal/eccfe) and do some actions. Then see the results in [kibana](https://kubernetes.docker.internal/kibana)
