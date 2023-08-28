@@ -16,4 +16,4 @@ spec:
                 port:
                   number: 8080
             path: /eccjava(/|$)(.*)
-            pathType: Prefix
+            pathType: ImplementationSpecific
