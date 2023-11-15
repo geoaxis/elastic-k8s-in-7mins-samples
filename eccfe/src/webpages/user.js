@@ -15,7 +15,7 @@ const User = props => {
   );
 
   useEffect(() => {
-    fetch(window.__RUNTIME_CONFIG__.API_URL + userId + "?stocks=true")
+    fetch(window.__RUNTIME_CONFIG__.API_URL + "/" + userId + "?stocks=true")
     .then(res => res.json())
     .then(
         (data) => {

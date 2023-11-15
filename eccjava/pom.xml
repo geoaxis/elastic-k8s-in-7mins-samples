@@ -18,7 +18,7 @@
     <java.version>17</java.version>
     <ecs-logging-java.version>1.5.0</ecs-logging-java.version>
     <janino.version>3.1.10</janino.version>
-    <apm-agent.version>1.42.0</apm-agent.version>
+    <apm-agent.version>1.43.0</apm-agent.version>
     <mapstruct.version>1.5.5.Final</mapstruct.version>
     <springdoc.openapi.version>2.2.0</springdoc.openapi.version>
   </properties>
